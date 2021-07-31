@@ -49,3 +49,19 @@
 ### When we compared manufacturing lot 3 against the population of cars with 1,500 PSI, our calculated p-value was 0.04168, which is below the common 0.05 percent. Therefore, we have sufficient evidence to reject the null hypothesis, and conclude that both means are not statistically similar.
 
 ![Del 3 Image 1](Images/del_3_lot_3_t_test.png)
+
+
+## **Study Design: MechaCar vs Competition**:
+
+### As we are trying to compare MechaCar's prototype specifications against its competitors, below are some variables we would want to look at and compare over a 5-year period:
+
+* New car sell price against the following independent variables:
+1. City vs. highway fuel efficiency
+2. Yearly cost of ownership over the car lifecyle
+3. Resale value over the lifecyle
+
+### The null hypothesis **(Ho)** is that the MechaCar prototypes' pricing strategy is accurate against its competitors' for their current specifications. 
+
+### The alternative hypothesis **(Ha)** is that the MechaCar prototypes' pricing strategy is not accurate / on par against its competitors' for their current specifications. 
+
+### To test our hypothesis, we would run a multiple line regression analysis of the new car sale price against the other independent variables, to understand which of them have the highest correlation with the new car sale price. To run this analysis, we would therefore use sale price, fuel efficiency, maintenance cost and resale value over a 5-year period.

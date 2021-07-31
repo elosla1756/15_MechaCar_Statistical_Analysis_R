@@ -14,6 +14,9 @@ total_summary <- Suspension_Coil_table %>% summarize(Mean=mean(PSI),Median=media
 
 lot_summary <- Suspension_Coil_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups='keep') #Creating a lot_summary data frame
 
+plt <- ggplot(Suspension_Coil_table,aes(x=Manufacturing_Lot,y=PSI)) #import dataset into ggplot2
+plt + geom_boxplot() # Creating a boxplot chart
+
 # Deliverable 3
 PSI_Suspension_Coil_table <- Suspension_Coil_table %>% filter (PSI==1500) # Creating 1500 PSI sample table
 
